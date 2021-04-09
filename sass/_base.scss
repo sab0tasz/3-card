@@ -1,0 +1,35 @@
+// RESPONSIVNESS
+
+$bp-phone: 25em; // 375px
+
+// FONTS 
+
+$font-primary: 'Lexend Deca', sans-serif;
+$font-secondary: 'Big Shoulders Display', sans-serif;
+
+// COLORS
+
+$color-orange: hsl(31, 77%, 52%);
+$color-dark-cyan: hsl(184, 100%, 22%);
+$color-darker-cyan: hsl(179, 100%, 13%);
+
+// TEXT COLORS 
+
+$color-white: hsla(0, 0%, 100%, 0.75);
+$color-grey: hsl(0, 0%, 95%);
+
+// RESETS
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 66.6%; // 15px
+    box-sizing: border-box;
+}
+

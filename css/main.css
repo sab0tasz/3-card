@@ -1,0 +1,148 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 66.6%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 5px;
+  overflow: hidden;
+  height: 60vh;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (max-width: 25em) {
+  main {
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  padding: 5rem;
+}
+
+@media only screen and (max-width: 25em) {
+  .card {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
+    margin: 1rem;
+  }
+}
+
+.card__icon {
+  height: 5rem;
+  width: 5rem;
+}
+
+.card__heading {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", sans-serif;
+  letter-spacing: .5rem;
+  color: #f2f2f2;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.card__text {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  color: #f2f2f2;
+  font-size: 1.8rem;
+  display: block;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+@media only screen and (max-width: 25em) {
+  .card__text {
+    margin: -2rem 0;
+  }
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn {
+  border: none;
+  border-radius: 50px;
+  -webkit-box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 3rem;
+  display: block;
+  margin-top: 5rem;
+  font-family: "Lexend Deca", sans-serif;
+  width: 75%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.btn:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.btn-sedans:hover {
+  color: #e38826;
+}
+
+.btn-suvs:hover {
+  color: #006970;
+}
+
+.btn-lux:hover {
+  color: #004241;
+}
+
+#sedans {
+  background-color: #e38826;
+}
+
+#suv {
+  background-color: #006970;
+}
+
+#lux {
+  background-color: #004241;
+}
